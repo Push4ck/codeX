@@ -26,12 +26,4 @@ codeXS is built with the following technologies:
 - CSS
 - JavaScript
 
-## Contribute and Learn Together 🤝
-
-codeXS welcomes contributions and collaborative coding. Feel free to share your code, suggest improvements, or add new features to make this code editor even more powerful.
-
-## Support and Feedback 💬
-
-If you encounter any issues or have questions, don't hesitate to open an issue in this repository. We're here to help you on your coding journey.
-
 Enjoy coding with codeXS! Happy coding! 🚀🎉

@@ -1,0 +1,106 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Poppins&family=Roboto+Slab&display=swap');
+
+/* Reset styles for consistent box model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for the body element */
+body {
+    background: #5d80f3;
+    height: 100%;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styling for the header section */
+.header {
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    margin-top: -5px; /* Adjusted margin for alignment */
+    margin-bottom: 5px;
+}
+
+.header h1 {
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Bungee', sans-serif;
+}
+
+.header h1 span {
+    font-size: 60px;
+    font-family: 'Roboto Slab', serif;
+    color: #434343;
+}
+
+/* Styling for the main container */
+.container {
+    width: 100%;
+    height: 90vh;
+    padding: 20px;
+    display: flex;
+}
+
+/* Styling for left and right sections inside the container */
+.left, .right {
+    flex-basis: 70%;
+    padding: 10px;
+}
+
+/* Styling for textareas and iframes */
+textarea, iframe {
+    width: 100%;
+    min-height: 180px;
+    background: #fff;
+    padding: 10px 20px;
+    border: 5px solid #434343;
+    outline: 0;
+    font-size: 18px;
+}
+
+iframe {
+    height: 94%;
+}
+
+/* Styling for the label element */
+label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #434343;
+    height: 30px;
+}
+
+/* Styling for left and right icons within the label */
+.left-icons, .right-icons {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.left-icons span {
+    margin-left: 5px;
+}
+
+.right-icons {
+    cursor: pointer;
+}
+
+/* Styling for save, copy, and delete icons */
+#save, #copy, #delete {
+    color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#save:hover, #copy:hover {
+    opacity: 0.7;
+}
+
+#delete:hover {
+    color: #ff4500; /* Adjusted color on hover for better visibility */
+}

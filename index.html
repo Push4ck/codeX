@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- External stylesheet link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon link -->
+    <link rel="icon" href="assets/images/favico.png" sizes="32x32" type="image/jpeg">
+    <!-- Document title -->
+    <title>codeX</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <h1>code<span>XS</span></h1>
+    </div>
+
+    <!-- Main Content Container -->
+    <div class="container">
+        <!-- Left Section with HTML, CSS, JS Editors -->
+        <div class="left">
+            <!-- HTML Section -->
+            <label>
+                <div class="left-icons">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML</span>
+                </div>
+                <div class="right-icons">
+                    <!-- Save, Copy, Delete buttons for HTML -->
+                    <i id="save" class="fas fa-save" onclick="saveContent('')"></i>
+                    <i id="copy" class="fas fa-copy" onclick="copyContent('')"></i>
+                    <i id="delete" class="fas fa-trash" onclick="deleteContent('html')"></i>
+                </div>
+            </label>
+            <!-- HTML Textarea -->
+            <textarea id="html-code" onkeyup="run()"></textarea>
+
+            <!-- CSS Section -->
+            <label>
+                <div class="left-icons">
+                    <i class="fa-brands fa-css3"></i>
+                    <span>CSS</span>
+                </div>
+                <div class="right-icons">
+                    <!-- Save, Copy, Delete buttons for CSS -->
+                    <i id="save" class="fas fa-save" onclick="saveContent('')"></i>
+                    <i id="copy" class="fas fa-copy" onclick="copyContent('')"></i>
+                    <i id="delete" class="fas fa-trash" onclick="deleteContent('css')"></i>
+                </div>
+            </label>
+            <!-- CSS Textarea -->
+            <textarea id="css-code" onkeyup="run()"></textarea>
+
+            <!-- JS Section -->
+            <label>
+                <div class="left-icons">
+                    <i class="fa-brands fa-js"></i>
+                    <span>JS</span>
+                </div>
+                <div class="right-icons">
+                    <!-- Save, Copy, Delete buttons for JS -->
+                    <i id="save" class="fas fa-save" onclick="saveContent('')"></i>
+                    <i id="copy" class="fas fa-copy" onclick="copyContent('')"></i>
+                    <i id="delete" class="fas fa-trash" onclick="deleteContent('js')"></i>
+                </div>
+            </label>
+            <!-- JS Textarea -->
+            <textarea id="js-code" onkeyup="run()"></textarea>
+        </div>
+
+        <!-- Right Section with Output -->
+        <div class="right">
+            <label>
+                <div class="left-icons">
+                    <i class="fa-solid fa-play"></i>
+                    <span>Output</span>
+                </div>
+            </label>
+            <!-- Output iframe -->
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/27594f998b.js" crossorigin="anonymous"></script>
+    <!-- Custom JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

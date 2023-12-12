@@ -1,5 +1,3 @@
-Certainly, here's the revised README file for your "codeXS" project with emojis included:
-
 # codeXS
 
 Unleash Your Coding Skills with codeXS! 💻🚀
@@ -17,6 +15,8 @@ Welcome to **codeXS**, where coding becomes your passport to the boundless realm
 - **FontAwesome Icons**: Included for added visual appeal and user-friendly design.
 
 - **Responsive Interface**: Works seamlessly on both desktop and mobile devices for a consistent coding experience.
+
+- **Copy, Delete, and Save Buttons**: Easily copy the entire code with the click of a button. Clear the textarea with the delete button. Save your files with the appropriate extension automatically added (e.g., index.html for HTML, style.css for CSS, script.js for JavaScript).
 
 ## Technologies Used 🛠️
 

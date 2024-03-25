@@ -1,133 +1,172 @@
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Poppins&family=Roboto+Slab&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 /* Reset styles for consistent box model */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
 }
 
 /* Styling for the body element */
 body {
-    background: #2e176d;
-    height: 100%;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
+  background: #111827;
+  color: #ffffff;
+  margin: 0; /* Add to reset default margin */
 }
 
 /* Styling for the header section */
-.header {
-    width: 100%;
-    height: 10vh;
-    text-align: center;
-    margin-top: -5px; /* Adjusted margin for alignment */
-    margin-bottom: 5px;
-    pointer-events: none;
-    user-select: none;
+header {
+  width: 100%;
+  height: 10vh;
+  text-align: center;
+  padding: 10px;
 }
 
-.header h1 {
-    color: #fff;
-    font-size: 50px;
-    font-family: 'Bungee', sans-serif;
-    
-}
-
-.header h1 span {
-    font-size: 60px;
-    font-family: 'Roboto Slab', serif;
-    color: #F8D800;
+header h1 {
+  color: #2563eb;
+  font-size: 50px;
 }
 
 /* Styling for the main container */
 .container {
-    width: 100%;
-    height: 90vh;
-    padding: 20px;
-    display: flex;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  padding: 20px;
+  gap: 20px;
 }
 
 /* Styling for left and right sections inside the container */
-.left, .right {
-    flex-basis: 70%;
-    padding: 10px;
+.left,
+.right {
+  flex: 1;
+  width: 100%;
 }
 
-/* Styling for textareas and iframes */
-textarea, iframe {
-    width: 100%;
-    height: 180px;
-    background: #fff;
-    padding: 10px 20px;
-    border-radius: 0 0 10px 10px;
-    outline: 0;
-    font-size: 18px;
-    resize: none;
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-textarea::-webkit-scrollbar {
-    width: 8px;
+.left .box {
+  flex: 1;
 }
 
-textarea::-webkit-scrollbar-track {
-    background-color: #0a0b16;
-    border-radius: 0 0 10px 0;
-}
-
-textarea::-webkit-scrollbar-thumb {
-    background: #9433ef;
-    border-radius: 0 0 10px 0;
+/* Styling for textarea and iframe */
+textarea,
+iframe {
+  width: 100%;
+  height: 200px;
+  resize: none;
+  border: none;
 }
 
 iframe {
-    height: 94%;
+  background-color: #ffffff;
+  height: 98vh;
 }
 
 /* Styling for the label element */
 label {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #4f27df;
-    background-image: linear-gradient(135deg, #9433ef 0%, #0a0b16 100%);
-    height: 30px;
-    border-radius: 10px 10px 0 0;
-    outline: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #212121;
+  color: #ffffff;
+  padding: 20px 10px;
+  border-radius: 10px 10px 0 0;
+  outline: 0;
+  width: 100%; /* Ensure full width */
 }
 
 /* Styling for left and right icons within the label */
-.left-icons, .right-icons {
-    display: flex;
-    align-items: center;
-    margin-left: 10px;
-    font-size: 20px;
+.left-icons,
+.right-icons {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  font-size: 20px;
 }
 
 .left-icons span {
-    margin-left: 7px;
-    user-select: none;
+  margin-left: 7px;
+  user-select: none;
 }
 
 .right-icons {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /* Styling for save, copy, and delete icons */
-#save, #copy, #delete {
-    color: #fff;
-    margin-left: 10px;
-    margin-right: 10px;
+#save,
+#copy,
+#delete {
+  color: #ffffff;
+  margin: 0 10px;
 }
 
 #save:hover {
-    color: #90ee90;
+  color: #90ee90;
 }
-    
+
 #copy:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 #delete:hover {
-    color: #ff4500;
+  color: #ff4500;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  color: #ffffff;
+}
+
+footer p a {
+  color: #ffffffb6;
+  text-decoration: none;
+}
+
+footer p a:hover {
+  color: #2563eb;
+}
+
+/* Media query max-width 720px */
+@media screen and (max-width: 720px) {
+  header h1 {
+    font-size: 36px;
+  }
+
+  .container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  textarea,
+  iframe {
+    width: 100%;
+    height: 200px;
+  }
+
+  .left {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  .box {
+    width: calc(100% - 20px);
+    margin: 0;
+  }
 }

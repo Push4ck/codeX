@@ -1,0 +1,176 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+/* Reset styles for consistent box model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  border: none;
+  resize: none;
+  outline: none;
+}
+
+/* Styling for the body element */
+body {
+  background: #3f444f;
+  color: #ffffff;
+  margin: 0; /* Add to reset default margin */
+}
+
+/* Styling for the header section */
+header {
+  width: 100%;
+  height: 10vh;
+  text-align: center;
+  padding: 10px;
+}
+
+header h1 {
+  color: #6999ff;
+  font-size: 50px;
+}
+
+/* Styling for the main container */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Styling for left and right sections inside the container */
+.left,
+.right {
+  flex: 1;
+  width: 100%;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left .box {
+  flex: 1;
+}
+
+/* Styling for textarea and iframe */
+textarea,
+iframe {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+}
+
+iframe {
+  background-color: #ffffff;
+  height: 98vh;
+}
+
+/* Styling for the label element */
+label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #212121;
+  color: #ffffff;
+  padding: 20px 10px;
+  border-radius: 10px 10px 0 0;
+  outline: 0;
+  width: 100%; /* Ensure full width */
+}
+
+/* Styling for left and right icons within the label */
+.left-icons,
+.right-icons {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.left-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.left-icons span {
+  margin-left: 10px;
+}
+
+.right-icons {
+  cursor: pointer;
+}
+
+/* Styling for save, copy, and delete icons */
+#save,
+#copy,
+#delete {
+  color: #ffffff;
+  margin: 0 10px;
+}
+
+#save:hover {
+  color: #1572b6;
+}
+
+#copy:hover {
+  opacity: 0.7;
+}
+
+#delete:hover {
+  color: #ff4500;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  color: #ffffff;
+}
+
+footer p a {
+  color: #ffffffb6;
+  text-decoration: none;
+}
+
+footer p a:hover {
+  color: #2563eb;
+}
+
+/* Media query max-width 720px */
+@media screen and (max-width: 720px) {
+  header h1 {
+    font-size: 36px;
+  }
+
+  .container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  textarea,
+  iframe {
+    width: 100%;
+    height: 200px;
+  }
+
+  .left {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  .box {
+    width: calc(100% - 20px);
+    margin: 0;
+  }
+}

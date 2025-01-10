@@ -6,13 +6,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- External stylesheet link -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Devicon stylesheet link -->
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="./style.css">
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/27594f998b.js" crossorigin="anonymous"></script>
     <!-- Favicon link -->
-    <link rel="icon" href="assets/images/favico.png" sizes="32x32" type="image/jpeg">
+    <link rel="icon" href="assets/favico.png" sizes="32x32" type="image/jpeg">
     <!-- Title -->
     <title>codeXS</title>
 </head>
@@ -31,14 +29,13 @@
             <div class="box">
                 <label>
                     <div class="left-icons">
-                        <i class="devicon-html5-plain colored"></i>
-                        <span>HTML</span>
+                        <img src="assets/languages/html5-original.svg" alt="">
                     </div>
                     <div class="right-icons">
                         <!-- Save, Copy, Delete buttons for HTML -->
-                        <i id="save" class="fa-regular fa-floppy-disk" onclick="saveContent('')"></i>
-                        <i id="copy" class="fa-regular fa-clipboard" onclick="copyContent('')"></i>
-                        <i id="delete" class="fa-regular fa-trash-can" onclick="deleteContent('html')"></i>
+                        <i id="save" class="fa-solid fa-file-arrow-down" onclick="saveContent('')"></i>
+                        <i id="copy" class="fa-solid fa-copy" onclick="copyContent('')"></i>
+                        <i id="delete" class="fa-solid fa-trash" onclick="deleteContent('html')"></i>
                     </div>
                 </label>
                 <!-- HTML Textarea -->
@@ -49,14 +46,13 @@
             <div class="box">
                 <label>
                     <div class="left-icons">
-                        <i class="devicon-css3-plain colored"></i>
-                        <span>CSS</span>
+                        <img src="assets/languages/css3-original.svg" alt="">
                     </div>
                     <div class="right-icons">
                         <!-- Save, Copy, Delete buttons for CSS -->
-                        <i id="save" class="fa-regular fa-floppy-disk" onclick="saveContent('')"></i>
-                        <i id="copy" class="fa-regular fa-clipboard" onclick="copyContent('')"></i>
-                        <i id="delete" class="fa-regular fa-trash-can" onclick="deleteContent('css')"></i>
+                        <i id="save" class="fa-solid fa-file-arrow-down" onclick="saveContent('')"></i>
+                        <i id="copy" class="fa-solid fa-copy" onclick="copyContent('')"></i>
+                        <i id="delete" class="fa-solid fa-trash" onclick="deleteContent('css')"></i>
                     </div>
                 </label>
                 <!-- CSS Textarea -->
@@ -67,14 +63,13 @@
             <div class="box">
                 <label>
                     <div class="left-icons">
-                        <i class="devicon-javascript-plain colored"></i>
-                        <span>JS</span>
+                        <img src="assets/languages/javascript-original.svg" alt="">
                     </div>
                     <div class="right-icons">
                         <!-- Save, Copy, Delete buttons for JS -->
-                        <i id="save" class="fa-regular fa-floppy-disk" onclick="saveContent('')"></i>
-                        <i id="copy" class="fa-regular fa-clipboard" onclick="copyContent('')"></i>
-                        <i id="delete" class="fa-regular fa-trash-can" onclick="deleteContent('js')"></i>
+                        <i id="save" class="fa-solid fa-file-arrow-down" onclick="saveContent('')"></i>
+                        <i id="copy" class="fa-solid fa-copy" onclick="copyContent('')"></i>
+                        <i id="delete" class="fa-solid fa-trash" onclick="deleteContent('js')"></i>
                     </div>
                 </label>
                 <!-- JS Textarea -->
@@ -86,8 +81,8 @@
         <div class="right">
             <label>
                 <div class="left-icons">
-                    <i class="fa-solid fa-play"></i>
-                    <span>Output</span>
+                    <i class="fa-solid fa-code"></i>
+                    <span>Code Preview</span>
                 </div>
             </label>
             <!-- Output iframe -->
@@ -104,7 +99,7 @@
     </footer>
 
     <!-- Custom JavaScript -->
-    <script src="assets/js/main.js"></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>
